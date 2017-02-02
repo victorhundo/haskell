@@ -1,0 +1,9 @@
+version: '2'
+
+services:
+    ghci:
+        build: ./docker
+        image: my-haskell:latest
+        restart: always
+        volumes:
+            - ./:/workspace
